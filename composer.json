@@ -1,13 +1,11 @@
 {
-    "name": "romanzipp/laravel-queue-monitor",
+    "name": "erictt/laravel-queue-monitor",
     "description": "Queue Monitoring for Laravel Database Job Queue",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "romanzipp",
-            "email": "ich@ich.wtf",
-            "homepage": "https://ich.wtf"
+            "name": "erictt",
         }
     ],
     "require": {
