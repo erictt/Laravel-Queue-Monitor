@@ -58,7 +58,9 @@ class QueueMonitorProvider extends ServiceProvider
         });
 
         $manager->after(static function (JobProcessed $event) {
-            QueueMonitor::handleJobProcessed($event);
+            if (!$event->job->hasFailed()) {
+                QueueMonitor::handleJobProcessed($event);
+            }
         });
 
         $manager->failing(static function (JobFailed $event) {
